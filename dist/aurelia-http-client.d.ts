@@ -28,6 +28,7 @@ declare module 'aurelia-http-client' {
      * @class HttpResponseMessage
      * @constructor
     */
+    // TODO: Refactor into the source JavaScript.
     export class HttpResponseMessage {
         constructor(requestMessage: any, xhr: any, responseType: any, reviver: any);
         /**
@@ -41,7 +42,7 @@ declare module 'aurelia-http-client' {
         /**
             * Formats the raw response content based on the responseType and returns it.
             */
-        content: any;
+        content(): any;
         /**
             * Returns a Headers object with the parsed header data.
             */
